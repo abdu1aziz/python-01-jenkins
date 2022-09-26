@@ -6,7 +6,7 @@ pipeline {
             agent { docker { image 'python:3.10.1-alpine' } }
             steps {
                 echo "Checking Python Version..."
-                sh 'python --version'
+                sh 'python3 app.py'
             }
         }
         stage('Testing Pipeline...') {
