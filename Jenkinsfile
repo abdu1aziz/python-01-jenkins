@@ -8,7 +8,7 @@ pipeline {
                 sh 'python3 app.py'
             }
         }
-        stage('Testing Pipeline...') {
+        stage('Checking OS_RELEASE File...') {
             steps {
                 echo "Checking CentOS /etc/os-release file..."
                 sh 'cat /etc/os-release'
