@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Building Pipeline...') {
             steps {
-                echo "Checking Python Version..."
+                echo "Attempting To Run the Python Program: 'app.py'..."
                 sh 'python3 app.py'
             }
         }
