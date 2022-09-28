@@ -14,6 +14,12 @@ pipeline {
                 sh 'cat /etc/os-release'
             }
         }
-                
+        stage('Checking for YUM Updates...') {
+            steps {
+                echo "Checking CentOS /etc/os-release file..."
+                sh 'bash OSupdates.sh'
+            }
+        }
+
     }
 }
