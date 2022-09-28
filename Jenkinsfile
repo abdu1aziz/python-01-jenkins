@@ -16,8 +16,8 @@ pipeline {
         }
         stage('Checking for YUM Updates...') {
             steps {
-                echo "Checking CentOS /etc/os-release file..."
-                sh 'bash OSupdates.sh'
+                echo "Checking CentOS avialable updates..."
+                sh 'OSupdates.sh'
             }
         }
 
